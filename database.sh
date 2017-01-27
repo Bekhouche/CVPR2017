@@ -152,5 +152,12 @@ for zipfile in database/val-2/*.zip; do
     rm -f $zipfile
 done
 
+# convert pkl to csv
+python database/pkl2csv.py
+# creat database mat file
+if [ ! -f database/database.mat ]; then
+   matlab -nodesktop -nosplash - nojvm -r "run database/creat_db.m;quit;"
+fi
+
 
 
