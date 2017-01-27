@@ -23,6 +23,15 @@ In case you have a problem with permission; you have to execute this command in 
 $ sudo chmod -R 777 database.sh
 ```
 
+### Face preprocessing phase
+You have to execute this bash script (preprocessing.sh) in Terminal, so you can type this instruction in Terminal:
+```
+$ ./preprocessing.sh
+```
+In case you have a problem with permission; you have to execute this command in terminal:
+```
+$ sudo chmod -R 777 preprocessing.sh
+
 
 
 ## Licence
