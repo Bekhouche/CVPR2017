@@ -7,8 +7,21 @@
  - Dlib (using GCC5)
  - Python2.7
 
-## Setup:
+## Setup
+### Download the project
+```
+$ git clone https://github.com/Bekhouche/FirstImpressionsV2.git
+```
 
+### Download and prepare data
+You have to execute this bash script (database.sh) in Terminal, so you can type this instruction in Terminal:
+```
+$ ./database.sh
+```
+In case you have a problem with permission; you have to execute this command in terminal:
+```
+$ sudo chmod -R 777 database.sh
+```
 
 
 
