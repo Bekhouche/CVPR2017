@@ -31,7 +31,7 @@ $ ./preprocessing.sh
 In case you have a problem with permission; you have to execute this command in terminal:
 ```
 $ sudo chmod -R 777 preprocessing.sh
-
+```
 
 
 ## Licence
