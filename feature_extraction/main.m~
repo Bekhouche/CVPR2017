@@ -1,0 +1,44 @@
+clc;clear;
+
+%% Init
+db.path = '../database/';
+db.name = 'database';
+load([db.path db.name]);
+db.num = numel(Database);
+
+%% Local Phase Quantization params
+optionsLPQ.descriptor = 'LPQ';
+optionsLPQ.winSize = 7;
+optionsLPQ.level = 7; % PML level
+
+%% Binarized Statistical Image Features params
+optionsBSIF.descriptor = 'BSIF';
+load ICAtextureFilters_9x9_8bit.mat
+optionsBSIF.filter = ICAtextureFilters;
+optionsBSIF.level = 7; % PML level
+
+for i=1:db.num
+    j = 0;
+    feaLPQ = [];
+    feaBSIF = [];
+    while (true)
+        j = j + 1;
+        if (~(exist(['../faces/' Database(i).filename(1:end-4) '/' num2str(j) '.png'], 'file') == 2))
+            break;
+        end
+        file = ['../faces/' Database(i).filename(1:end-4) '/' num2str(j) '.png'];
+        img = rgb2gray(imread(file));
+        feaLPQ(j,:) = PML(img,optionsLPQ);
+    end
+    
+    if (size(feaLPQ,1) > 1)
+        features(i,:) = [mean(feaLPQ)];
+    else
+        features(i,:) = [feaLPQ];
+    end
+    
+    fprintf('Video (%d images) %d/%d (%s) \n',j,i,db.num, Database(i).filename);
+end
+
+save(['../features/' 'PML_' optionsLPQ.descriptor '_' num2str(optionsLPQ.level) '.mat'],'features','-v7.3');
+%}
