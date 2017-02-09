@@ -41,8 +41,10 @@ for root, dirs, files in os.walk(db_path):
                  gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
 
                  # Face detection
-                 faces = cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5,
-                                                  minSize=(120, 120), flags=cv2.cv.CV_HAAR_FIND_BIGGEST_OBJECT)
+                 #faces = cascade.detectMultiScale(gray, scaleFactor=1.3, minNeighbors=5,
+                                                  #minSize=(120, 120), flags=cv2.cv.CV_HAAR_FIND_BIGGEST_OBJECT)
+                 faces = cascade.detectMultiScale(gray, scaleFactor=1.05, minNeighbors=5,
+                                                  minSize=(150, 150), flags=cv2.cv.CV_HAAR_FIND_BIGGEST_OBJECT)
 
 
                  pts = ""
