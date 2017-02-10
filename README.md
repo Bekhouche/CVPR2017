@@ -34,7 +34,7 @@ Execute this bash script (feature_extraction.sh)
 ```
 $ ./feature_extraction.sh
 ```
-In case you want to skip the last two phases. Download the features and the relative files from [here](https://data.mendeley.com/datasets/nrcd6h3kdx/draft?a=a279a3f4-9c63-4f77-a691-d14a2c47f61b).
+In case you want to skip the last two phases. Download the features and the relative files from [Mendeley](https://data.mendeley.com/datasets/nrcd6h3kdx/draft?a=a279a3f4-9c63-4f77-a691-d14a2c47f61b) or [Researchgate](https://www.researchgate.net/publication/313557489_Pyramid_Multi-Level_Features_for_Apparent_Personality_Analysis).
 You have to put database.mat in database folder, for the features files download PML_BSIF_7.mat and PML_LPQ_7.mat put them in feature_extraction/features path.
 
 
