@@ -1,4 +1,5 @@
 # Source codes for the ChaLearn Looking at People - Job Candidate Screening Competition
+Info: The code is not optimized yet ..
 
 ## Requirements
  - Operating System: Ubuntu or Debian
