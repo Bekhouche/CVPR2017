@@ -1,6 +1,35 @@
 # Source codes for the ChaLearn Looking at People - Job Candidate Screening Competition
 Info: The code is not optimized yet ..
 
+## Scientific Use
+If you find thiw work useful please cite the following documents:
+```latex
+@InProceedings{CVPRW2017,
+title={Personality Traits and Job Candidate Screening via Analyzing Facial Videos},
+author={Bekhouche, Salah Eddine and Dornaika, Fadi and Ouafi, Abdelkrim and Taleb-Ahmed, Abdelmalik},
+booktitle={Computer Vision and Pattern Recognition Workshops (CVPRW), 2017 IEEE Conference on},
+pages={1660–1663},
+year={2017},
+organization={IEEE},
+doi={10.1109/CVPRW.2017.211}
+}
+```
+AND
+```latex
+@article{ESWA2017,
+title = “Pyramid Multi-Level Features for Facial Demographic Estimation “,
+journal = “Expert Systems with Applications “,
+volume = “80”,
+pages = “297–310”,
+year = “2017”,
+issn = “0957-4174”,
+doi = “http://dx.doi.org/10.1016/j.eswa.2017.03.030”,
+url = “http://www.sciencedirect.com/science/article/pii/S0957417417301793”,
+author = “SE. Bekhouche and A. Ouafi and F. Dornaika and A. Taleb-Ahmed and A. Hadid”
+}
+```
+
+
 ## Requirements
  - Operating System: Ubuntu or Debian
  - Matlab R2016a or later
