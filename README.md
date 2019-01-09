@@ -40,7 +40,7 @@ author = “SE. Bekhouche and A. Ouafi and F. Dornaika and A. Taleb-Ahmed and A.
 ## Setup
 ### Download the project
 ```
-$ git clone https://github.com/Bekhouche/FirstImpressionsV2.git
+$ git clone https://github.com/Bekhouche/CVPR2017.git
 ```
 
 ### Download and prepare data
