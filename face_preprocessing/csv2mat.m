@@ -1,6 +1,6 @@
 clc;clear;
 
-load ../FirstImpressionsV2.mat;
+load ../database.mat;
 
 db_path = [cd '/'];
 db.num = numel(Database);
